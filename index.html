@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotifu</title>
+    <link rel="stylesheet" href="./css/index.css">
+
+    <meta property="og:title" content="Spotifu" />
+    <meta property="og:type" content="website" />
+    <!-- <meta property="og:url" content="https://www.imdb.com/title/tt0117500/" />
+    <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" /> -->
+    <meta property="og:description" content="Lo mejor de la musica en un solo sitio" />
+
+
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+</head>
+
+
+<body class="body">
+
+    <div class="layout">
+        <div class="layout-block">
+
+            <div class="layout-sidebar">
+                
+                <div class="sidebar">
+            
+                    <header class="logo">
+                        <a href="/" aria-current="page">
+                            <img src="./images/spotifu-logo.png" class="logo-image" width="112" height="32" alt="Logo de Spotifu">
+                        </a>    
+                    </header>
+            
+                    <nav class="menu" aria-label="Principal">
+            
+                        <ul class="menu-list">
+                            <li class="menuItem is-active">
+                                <a href="/" class="link" aria-current="page">
+                                    <i class="icon-home" aria-hidden="true"></i>
+                                    <span>Inicio</span>
+                                </a>
+                            </li>
+            
+                            <li class="menuItem is-active">
+                                <a href="/" class="link">
+                                    <i class="icon-search" aria-hidden="true"></i>
+                                    <span>Buscar</span>
+                                </a>
+                            </li>
+            
+                            <li class="menuItem is-active">
+                                <a href="/" class="link">
+                                    <i class="icon-creditCard" aria-hidden="true"></i>
+                                    <span>Premium</span>
+                                </a>
+                            </li>
+            
+                        </ul>
+            
+                        
+            
+                    </nav>
+            
+                    <nav class="list" aria-labelledby="library-navigation">
+                        <h2 class="list-title" id="library-navigation">Tu biblioteca</h2>
+                        <ul class="list-content" >
+                            <li class="list-item">
+                                <span class="ellipsis">
+                                    <a class="link" href="#">Creada para ti</a>
+                                </span>
+                            </li>
+                            <li class="list-item">
+                                <span class="ellipsis">
+                                    <a class="link" href="#">Escuchado recientemente</a>
+                                </span>
+                            </li>
+                            <li class="list-item">
+                                <span class="ellipsis">
+                                    <a class="link" href="#">Tus Me Gusta</a>
+                                </span>
+                            </li>
+                        </ul>
+                    </nav>
+                    
+                    <nav class="list" aria-labelledby="playlist-navigation">
+                        <h2 class="list-title" id="playlist-navigation">Playlist</h2>
+                        <ul class="list-content" >
+                            <li class="list-item">
+                                <span class="ellipsis">
+                                    <a class="link" href="#">Lo mejor de los mejor</a>
+                                </span>
+                            </li>
+                            <li class="list-item">
+                                <span class="ellipsis">
+                                    <a class="link" href="#">Naruto al 100% para programar</a>
+                                </span>
+                            </li>
+                            <li class="list-item">
+                                <span class="ellipsis">
+                                    <a class="link" href="#">Para cantar en la ducha</a>
+                                </span>
+                            </li>
+                            <li class="list-item">
+                                <span class="ellipsis">
+                                    <a class="link" href="#">Sin parar</a>
+                                </span>
+                            </li>
+                            <li class="list-item">
+                                <span class="ellipsis">
+                                    <a class="link" href="#">Naruto openings</a>
+                                </span>
+                            </li>
+                            <li class="list-item">
+                                <span class="ellipsis">
+                                    <a class="link" href="#">Boku no pico</a>
+                                </span>
+                            </li>
+                            <li class="list-item">
+                                <span class="ellipsis">
+                                    <a class="link" href="#">This is Pokémon</a>
+                                </span>
+                            </li>
+                            <li class="list-item">
+                                <span class="ellipsis">
+                                    <a class="link" href="#">Más populares de la semana para ti que eres un pro</a>
+                                </span>
+                            </li>
+                            <li class="list-item">
+                                <span class="ellipsis">
+                                    <a class="link" href="#">Mis pistas de shazam</a>
+                                </span>
+                            </li>
+                            <li class="list-item">
+                                <span class="ellipsis">
+                                    <a class="link" href="#">Audio Library</a>
+                                </span>
+                            </li>
+                            <li class="list-item">
+                                <span class="ellipsis">
+                                    <a class="link" href="#">Ammor y otras</a>
+                                </span>
+                            </li>
+                            <li class="list-item">
+                                <span class="ellipsis">
+                                    <a class="link" href="#">Latin</a>
+                                </span>
+                            </li>
+                            <li class="list-item">
+                                <span class="ellipsis">
+                                    <a class="link" href="#">Pokemon</a>
+                                </span>
+                            </li>
+                            <li class="list-item">
+                                <span class="ellipsis">
+                                    <a class="link" href="#">Para cantar</a>
+                                </span>
+                            </li>
+                            <li class="list-item">
+                                <span class="ellipsis">
+                                    <a class="link" href="#">Yui</a>
+                                </span>
+                            </li>
+                        </ul>
+                    </nav>
+                    
+            
+                </div>
+
+            </div>
+            
+            <div class="layout-main">
+                
+                <div class="page">
+            
+                    <div class="sticky">
+                        
+                        <div class="page-block">
+                            
+                            <header class="header" aria-label="Barra superior y menu del usuario">
+                                <div class="navigation">
+                                    <button class="navigation-prev" aria-label="Volver" title="Volver">
+                                        <i class="icon-arrowLeft" aria-hidden="true"></i>
+                                    </button>
+                                    <button class="navigation-next" disabled aria-label="Avanzar" title="Volver">
+                                        <i class="icon-arrowRight" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                        
+                                <form action="" class="search" role="search" aria-label="Buscar por artistas, canciones o podcast">
+                                    <i class="icon-search" aria-hidden="true"></i>
+                                    <input type="search" placeholder="Buscar por artistas, canciones o podcast">
+                            
+                            
+                                </form>
+                        
+                            </header>
+                    
+                        </div>
+                    
+                    </div>
+            
+                    <main class="page-block">
+            
+                        <section class="playlistList" aria-labelledby="region1">
+                    
+                            <div class="playlistList-top">
+                                <h2 class="playlistList-title" id="region1">
+                                    Buenas noches
+                                </h2>
+                                <div class="navigation">
+                                    <button class="navigation-prev" aria-label="Volver" title="Volver">
+                                        <i class="icon-arrowLeft" aria-hidden="true"></i>
+                                    </button>
+                                    <button class="navigation-next" disabled aria-label="Avanzar" title="Volver">
+                                        <i class="icon-arrowRight" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="playlistList-container">
+                    
+                                <div class="playlistB">
+                                    <div class="playlistb-cover">
+                                        <img src="./images/arcangel-1.jpeg"  alt="Cover - Me prefieres a mi">
+                                    </div>
+                                    <div class="playlistB-details">
+                                        <h3 class="playlistB-title">Me prefieres a mi </h3>
+                                        <div class="playlistB-control">
+                                            <button class="buttonIcon is is-primary" title="Reproducir la lista de reproducción Arcangel la maravilla" aria-label="Reproducir la lista de reproducción Arcangel la maravilla">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                            
+                                </div>
+                    
+                                <div class="playlistB">
+                                    <div class="playlistb-cover">
+                                        <img src="./images/arcangel-2.jpeg"  alt="Cover - Flow violento">
+                                    </div>
+                                    <div class="playlistB-details">
+                                        <h3 class="playlistB-title">Flow violento</h3>
+                                        <div class="playlistB-control">
+                                            <button class="buttonIcon is is-primary" title="Reproducir la lista de reproducción Arcangel la maravilla" aria-label="Reproducir la lista de reproducción Arcangel la maravilla">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                            
+                                </div>
+                    
+                                <div class="playlistB">
+                                    <div class="playlistb-cover">
+                                        <img src="./images/arcangel-3.jpeg"  alt="Cover - Pa que la pases bien">
+                                    </div>
+                                    <div class="playlistB-details">
+                                        <h3 class="playlistB-title">Pa que la pases bien</h3>
+                                        <div class="playlistB-control">
+                                            <button class="buttonIcon is is-primary" title="Reproducir la lista de reproducción Arcangel la maravilla" aria-label="Reproducir la lista de reproducción Arcangel la maravilla">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                            
+                                </div>
+                    
+                                <div class="playlistB">
+                                    <div class="playlistb-cover">
+                                        <img src="./images/arcangel-4.jpeg"  alt="Cover - Me he enamorado de ti">
+                                    </div>
+                                    <div class="playlistB-details">
+                                        <h3 class="playlistB-title">Me he enamorado de <title></title></h3>
+                                        <div class="playlistB-control">
+                                            <button class="buttonIcon is is-primary" title="Reproducir la lista de reproducción Arcangel la maravilla" aria-label="Reproducir la lista de reproducción Arcangel la maravilla">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                            
+                                </div>
+                    
+                                <div class="playlistB">
+                                    <div class="playlistb-cover">
+                                        <img src="./images/arcangel-5.jpeg"  alt="Cover - bonita">
+                                    </div>
+                                    <div class="playlistB-details">
+                                        <h3 class="playlistB-title">Bonita</h3>
+                                        <div class="playlistB-control">
+                                            <button class="buttonIcon is is-primary" title="Reproducir la lista de reproducción Arcangel la maravilla" aria-label="Reproducir la lista de reproducción Arcangel la maravilla">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                            
+                                </div>
+                    
+                                <div class="playlistB">
+                                    <div class="playlistb-cover">
+                                        <img src="./images/arcangel-6.jpeg"  alt="Cover - Tengo tantas de ganas de ti">
+                                    </div>
+                                    <div class="playlistB-details">
+                                        <h3 class="playlistB-title">Tengo tantas ganas de ti</h3>
+                                        <div class="playlistB-control">
+                                            <button class="buttonIcon is is-primary" title="Reproducir la lista de reproducción Arcangel la maravilla" aria-label="Reproducir la lista de reproducción Arcangel la maravilla">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                            
+                                </div>
+                    
+                                <div class="playlistB">
+                                    <div class="playlistb-cover">
+                                        <img src="./images/arcangel-7.jpeg"  alt="Cover - Hace mucho tiempo">
+                                    </div>
+                                    <div class="playlistB-details">
+                                        <h3 class="playlistB-title">Hace mucho tiempo</h3>
+                                        <div class="playlistB-control">
+                                            <button class="buttonIcon is is-primary" title="Reproducir la lista de reproducción Arcangel la maravilla" aria-label="Reproducir la lista de reproducción Arcangel la maravilla">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                            
+                                </div>
+                    
+                                <div class="playlistB">
+                                    <div class="playlistb-cover">
+                                        <img src="./images/arcangel-8.jpeg"  alt="Cover - Por amar a ciegas">
+                                    </div>
+                                    <div class="playlistB-details">
+                                        <h3 class="playlistB-title">Por amar a ciegas</h3>
+                                        <div class="playlistB-control">
+                                            <button class="buttonIcon is is-primary" title="Reproducir la lista de reproducción Arcangel la maravilla" aria-label="Reproducir la lista de reproducción Arcangel la maravilla">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                            
+                                </div>
+                    
+                                <div class="playlistB">
+                                    <div class="playlistb-cover">
+                                        <img src="./images/arcangel-9.jpeg"  alt="Cover - La maravilla">
+                                    </div>
+                                    <div class="playlistB-details">
+                                        <h3 class="playlistB-title">La maravilla</h3>
+                                        <div class="playlistB-control">
+                                            <button class="buttonIcon is is-primary" title="Reproducir la lista de reproducción Arcangel la maravilla" aria-label="Reproducir la lista de reproducción Arcangel la maravilla">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                            
+                                </div>
+                    
+                            </div>
+                    
+                        </section>
+                    
+                        <section class="playlistList" aria-labelledby="region2">
+                    
+                            <div class="playlistList-top">
+                                <h2 class="playlistList-title" id="region2">
+                                    Escuchado recientemente
+                                </h2>
+                                <div class="navigation">
+                                    <button class="navigation-prev" aria-label="Volver" title="Volver">
+                                        <i class="icon-arrowLeft" aria-hidden="true"></i>
+                                    </button>
+                                    <button class="navigation-next" disabled aria-label="Avanzar" title="Volver">
+                                        <i class="icon-arrowRight" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </div>
+                    
+                            <div class="playlistList-container">
+                    
+                                <div class="playlistA">
+                                    <div class="playlistA-cover">
+                                        <img src="./images/mana-1.jpeg"  alt="Cover- Bendita tu luz">
+                                        <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                                            <i class="icon-play" aria-hidden="true"></i>
+                                        </button>
+                            
+                                    </div>
+                                    <h3 class="playlistA-title">Mana</h3>
+                                    <h4 class="playlistA-description">Bendita tu luz</h4>
+                                </div>
+                    
+                                <div class="playlistA">
+                                    <div class="playlistA-cover">
+                                        <img src="./images/mana-2.jpeg"  alt="Cover - Amor clandestino">
+                                        <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                                            <i class="icon-play" aria-hidden="true"></i>
+                                        </button>
+                            
+                                    </div>
+                                    <h3 class="playlistA-title">Mana </h3>
+                                    <h4 class="playlistA-description">Amor clandestino</h4>
+                                </div>
+                    
+                                <div class="playlistA">
+                                    <div class="playlistA-cover">
+                                        <img src="./images/mana-3.jpeg"  alt="Cover - Rayando el sol">
+                                        <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                                            <i class="icon-play" aria-hidden="true"></i>
+                                        </button>
+                            
+                                    </div>
+                                    <h3 class="playlistA-title">Mana</h3>
+                                    <h4 class="playlistA-description">Rayando el sol</h4>
+                                </div>
+                    
+                                <div class="playlistA">
+                                    <div class="playlistA-cover">
+                                        <img src="./images/mana-4.jpeg"  alt="Cover - Labios compartidos">
+                                        <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                                            <i class="icon-play" aria-hidden="true"></i>
+                                        </button>
+                            
+                                    </div>
+                                    <h3 class="playlistA-title">Mana</h3>
+                                    <h4 class="playlistA-description">Labios compartidos</h4>
+                                </div>
+                    
+                                <div class="playlistA">
+                                    <div class="playlistA-cover">
+                                        <img src="./images/mana-5.jpeg"  alt="Cover - Oye mi amor">
+                                        <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                                            <i class="icon-play" aria-hidden="true"></i>
+                                        </button>
+                            
+                                    </div>
+                                    <h3 class="playlistA-title">Mana</h3>
+                                    <h4 class="playlistA-description">Oye mi amor</h4>
+                                </div>
+                    
+                                <div class="playlistA">
+                                    <div class="playlistA-cover">
+                                        <img src="./images/planB-1.jpeg"  alt="Cover - mi vecinita">
+                                        <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                                            <i class="icon-play" aria-hidden="true"></i>
+                                        </button>
+                            
+                                    </div>
+                                    <h3 class="playlistA-title">Plan B</h3>
+                                    <h4 class="playlistA-description">Mi vecinita</h4>
+                                </div>
+                    
+                                <div class="playlistA">
+                                    <div class="playlistA-cover">
+                                        <img src="./images/planB-2.jpeg"  alt="Cover - Si no le contesto">
+                                        <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                                            <i class="icon-play" aria-hidden="true"></i>
+                                        </button>
+                            
+                                    </div>
+                                    <h3 class="playlistA-title">Plan B</h3>
+                                    <h4 class="playlistA-description">Si no le contesto</h4>
+                                </div>
+                    
+                                <div class="playlistA">
+                                    <div class="playlistA-cover">
+                                        <img src="./images/planB-3.jpeg"  alt="Cover - Fanatica Sensual">
+                                        <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                                            <i class="icon-play" aria-hidden="true"></i>
+                                        </button>
+                            
+                                    </div>
+                                    <h3 class="playlistA-title">Plan B</h3>
+                                    <h4 class="playlistA-description">Fanatica sensual</h4>
+                                </div>
+                    
+                                <div class="playlistA">
+                                    <div class="playlistA-cover">
+                                        <img src="./images/planB-4.jpeg"  alt="Cover - Es un secreto">
+                                        <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                                            <i class="icon-play" aria-hidden="true"></i>
+                                        </button>
+                            
+                                    </div>
+                                    <h3 class="playlistA-title">Plan B</h3>
+                                    <h4 class="playlistA-description">Es un secreto</h4>
+                                </div>
+                    
+                            </div>
+                    
+                        </section>
+            
+                        <section class="playlistList" aria-labelledby="region3">
+                    
+                            <div class="playlistList-top">
+                                <h2 class="playlistList-title" id="region3">
+                                    podcast
+                                </h2>
+                                <div class="navigation">
+                                    <button class="navigation-prev" aria-label="Volver" title="Volver">
+                                        <i class="icon-arrowLeft" aria-hidden="true"></i>
+                                    </button>
+                                    <button class="navigation-next" disabled aria-label="Avanzar" title="Volver">
+                                        <i class="icon-arrowRight" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </div>
+                    
+                            <div class="playlistList-container">
+                    
+                                <div class="playlistA">
+                                    <div class="playlistA-cover">
+                                        <img src="./images/mana-1.jpeg"  alt="Cover- Bendita tu luz">
+                                        <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                                            <i class="icon-play" aria-hidden="true"></i>
+                                        </button>
+                            
+                                    </div>
+                                    <h3 class="playlistA-title">Mana</h3>
+                                    <h4 class="playlistA-description">Bendita tu luz</h4>
+                                </div>
+                    
+                                <div class="playlistA">
+                                    <div class="playlistA-cover">
+                                        <img src="./images/mana-2.jpeg"  alt="Cover - Amor clandestino">
+                                        <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                                            <i class="icon-play" aria-hidden="true"></i>
+                                        </button>
+                            
+                                    </div>
+                                    <h3 class="playlistA-title">Mana </h3>
+                                    <h4 class="playlistA-description">Amor clandestino</h4>
+                                </div>
+                    
+                                <div class="playlistA">
+                                    <div class="playlistA-cover">
+                                        <img src="./images/mana-3.jpeg"  alt="Cover - Rayando el sol">
+                                        <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                                            <i class="icon-play" aria-hidden="true"></i>
+                                        </button>
+                            
+                                    </div>
+                                    <h3 class="playlistA-title">Mana</h3>
+                                    <h4 class="playlistA-description">Rayando el sol</h4>
+                                </div>
+                    
+                                <div class="playlistA">
+                                    <div class="playlistA-cover">
+                                        <img src="./images/mana-4.jpeg"  alt="Cover - Labios compartidos">
+                                        <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                                            <i class="icon-play" aria-hidden="true"></i>
+                                        </button>
+                            
+                                    </div>
+                                    <h3 class="playlistA-title">Mana</h3>
+                                    <h4 class="playlistA-description">Labios compartidos</h4>
+                                </div>
+                    
+                                <div class="playlistA">
+                                    <div class="playlistA-cover">
+                                        <img src="./images/mana-5.jpeg"  alt="Cover - Oye mi amor">
+                                        <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                                            <i class="icon-play" aria-hidden="true"></i>
+                                        </button>
+                            
+                                    </div>
+                                    <h3 class="playlistA-title">Mana</h3>
+                                    <h4 class="playlistA-description">Oye mi amor</h4>
+                                </div>
+                    
+                                <div class="playlistA">
+                                    <div class="playlistA-cover">
+                                        <img src="./images/planB-1.jpeg"  alt="Cover - mi vecinita">
+                                        <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                                            <i class="icon-play" aria-hidden="true"></i>
+                                        </button>
+                            
+                                    </div>
+                                    <h3 class="playlistA-title">Plan B</h3>
+                                    <h4 class="playlistA-description">Mi vecinita</h4>
+                                </div>
+                    
+                                <div class="playlistA">
+                                    <div class="playlistA-cover">
+                                        <img src="./images/planB-2.jpeg"  alt="Cover - Si no le contesto">
+                                        <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                                            <i class="icon-play" aria-hidden="true"></i>
+                                        </button>
+                            
+                                    </div>
+                                    <h3 class="playlistA-title">Plan B</h3>
+                                    <h4 class="playlistA-description">Si no le contesto</h4>
+                                </div>
+                    
+                                <div class="playlistA">
+                                    <div class="playlistA-cover">
+                                        <img src="./images/planB-3.jpeg"  alt="Cover - Fanatica Sensual">
+                                        <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                                            <i class="icon-play" aria-hidden="true"></i>
+                                        </button>
+                            
+                                    </div>
+                                    <h3 class="playlistA-title">Plan B</h3>
+                                    <h4 class="playlistA-description">Fanatica sensual</h4>
+                                </div>
+                    
+                                <div class="playlistA">
+                                    <div class="playlistA-cover">
+                                        <img src="./images/planB-4.jpeg"  alt="Cover - Es un secreto">
+                                        <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                                            <i class="icon-play" aria-hidden="true"></i>
+                                        </button>
+                            
+                                    </div>
+                                    <h3 class="playlistA-title">Plan B</h3>
+                                    <h4 class="playlistA-description">Es un secreto</h4>
+                                </div>
+                    
+                            </div>
+                    
+                        </section>
+            
+                        <section class="playlistList" aria-labelledby="region4">
+                    
+                            <div class="playlistList-top">
+                                <h2 class="playlistList-title" id="region4">
+                                    Lo mejor de lo mejor
+                                </h2>
+                                <div class="navigation">
+                                    <button class="navigation-prev" aria-label="Volver" title="Volver">
+                                        <i class="icon-arrowLeft" aria-hidden="true"></i>
+                                    </button>
+                                    <button class="navigation-next" disabled aria-label="Avanzar" title="Volver">
+                                        <i class="icon-arrowRight" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </div>
+                    
+                            <div class="playlistList-container">
+                    
+                                <div class="playlistA">
+                                    <div class="playlistA-cover">
+                                        <img src="./images/mana-1.jpeg"  alt="Cover- Bendita tu luz">
+                                        <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                                            <i class="icon-play" aria-hidden="true"></i>
+                                        </button>
+                            
+                                    </div>
+                                    <h3 class="playlistA-title">Mana</h3>
+                                    <h4 class="playlistA-description">Bendita tu luz</h4>
+                                </div>
+                    
+                                <div class="playlistA">
+                                    <div class="playlistA-cover">
+                                        <img src="./images/mana-2.jpeg"  alt="Cover - Amor clandestino">
+                                        <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                                            <i class="icon-play" aria-hidden="true"></i>
+                                        </button>
+                            
+                                    </div>
+                                    <h3 class="playlistA-title">Mana </h3>
+                                    <h4 class="playlistA-description">Amor clandestino</h4>
+                                </div>
+                    
+                                <div class="playlistA">
+                                    <div class="playlistA-cover">
+                                        <img src="./images/mana-3.jpeg"  alt="Cover - Rayando el sol">
+                                        <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                                            <i class="icon-play" aria-hidden="true"></i>
+                                        </button>
+                            
+                                    </div>
+                                    <h3 class="playlistA-title">Mana</h3>
+                                    <h4 class="playlistA-description">Rayando el sol</h4>
+                                </div>
+                    
+                                <div class="playlistA">
+                                    <div class="playlistA-cover">
+                                        <img src="./images/mana-4.jpeg"  alt="Cover - Labios compartidos">
+                                        <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                                            <i class="icon-play" aria-hidden="true"></i>
+                                        </button>
+                            
+                                    </div>
+                                    <h3 class="playlistA-title">Mana</h3>
+                                    <h4 class="playlistA-description">Labios compartidos</h4>
+                                </div>
+                    
+                                <div class="playlistA">
+                                    <div class="playlistA-cover">
+                                        <img src="./images/mana-5.jpeg"  alt="Cover - Oye mi amor">
+                                        <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                                            <i class="icon-play" aria-hidden="true"></i>
+                                        </button>
+                            
+                                    </div>
+                                    <h3 class="playlistA-title">Mana</h3>
+                                    <h4 class="playlistA-description">Oye mi amor</h4>
+                                </div>
+                    
+                                <div class="playlistA">
+                                    <div class="playlistA-cover">
+                                        <img src="./images/planB-1.jpeg"  alt="Cover - mi vecinita">
+                                        <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                                            <i class="icon-play" aria-hidden="true"></i>
+                                        </button>
+                            
+                                    </div>
+                                    <h3 class="playlistA-title">Plan B</h3>
+                                    <h4 class="playlistA-description">Mi vecinita</h4>
+                                </div>
+                    
+                                <div class="playlistA">
+                                    <div class="playlistA-cover">
+                                        <img src="./images/planB-2.jpeg"  alt="Cover - Si no le contesto">
+                                        <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                                            <i class="icon-play" aria-hidden="true"></i>
+                                        </button>
+                            
+                                    </div>
+                                    <h3 class="playlistA-title">Plan B</h3>
+                                    <h4 class="playlistA-description">Si no le contesto</h4>
+                                </div>
+                    
+                                <div class="playlistA">
+                                    <div class="playlistA-cover">
+                                        <img src="./images/planB-3.jpeg"  alt="Cover - Fanatica Sensual">
+                                        <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                                            <i class="icon-play" aria-hidden="true"></i>
+                                        </button>
+                            
+                                    </div>
+                                    <h3 class="playlistA-title">Plan B</h3>
+                                    <h4 class="playlistA-description">Fanatica sensual</h4>
+                                </div>
+                    
+                                <div class="playlistA">
+                                    <div class="playlistA-cover">
+                                        <img src="./images/planB-4.jpeg"  alt="Cover - Es un secreto">
+                                        <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+                                            <i class="icon-play" aria-hidden="true"></i>
+                                        </button>
+                            
+                                    </div>
+                                    <h3 class="playlistA-title">Plan B</h3>
+                                    <h4 class="playlistA-description">Es un secreto</h4>
+                                </div>
+                    
+                            </div>
+                    
+                        </section>
+            
+            
+                    </main>
+            
+                </div>
+
+            </div>
+            
+        </div>
+
+        <div class="layout-block">
+            
+            <footer class="layout-bottom">
+
+                <div class="player">
+            
+                    <div class="player-nowPlaying">
+                        <div class="nowPlaying">
+                            <div class="nowPlaying-cover">
+                                <img src="./images/grand-scape.png"  alt="Portada de Grand Escape (Feat. Tokio Miura">
+                            </div>
+                            <div class="nowPlaying-details">
+                                <div class="nowplaying-description">
+                                    <a href="#song" class="nowPlaying-title">
+                                        Grand Escape (feat. Tokio Miura)
+                                    </a>
+                                    <a href="#RADWIMPS" class="nowPlaying-artist">
+                                        RADWIMPS, Toko Miura
+                                    </a>
+                                </div>
+                                <div class="nowplpaying-actions">
+                                    <button class="player-control" role="switch" aria-checked="false" aria-label="Guardar en tu biblioteca" title="Guardar en tu biblioteca">
+                                        <i class="icon-heart"  aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </div>
+                
+                                
+                        </div>
+                    </div>
+                    
+                    <div class="player-playerControls">
+                        <div class="playerControls" aria-label="Controles de reproducción">
+                            <div class="playerControls-buttons">
+                                <button class="buttonIcon" aria-label="Anterior" title="Anterior">
+                                    <i class="icon-prev" aria-hidden="true"></i>
+                                </button>
+                        
+                                <button class="buttonIcon is-white" aria-label="Reproducir" title="Reproducir">
+                                    <i class="icon-play" aria-hidden="true"></i>
+                                </button>
+                        
+                                <button class="buttonIcon" aria-label="Siguiente" title="Siguiente">
+                                    <i class="icon-next" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                            
+                            <div class="playerPlayBack">
+                                <span class="playerPlayBack-progressTime">01:40</span>
+                                <div class="playerPlayBack-slider">
+                                    <div class="slider">
+                                        <div class="slider-progress">
+                                            <button class="slider-button" aria-label="Controlar el progreso de la producción"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="playerPlayBack-progressTime" >03:25</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="player-playerVolume">
+                        <div class="playerVolume">
+                            <button class="player-control" aria-label="Silenciar" aria-describedby="volume-icon">
+                                <i class="icon-volumeUp" id="volumen-icon" aria-hidden="true" role="presentation" aria-label="Volumen alto"></i>
+                            </button>
+                            <div class="playerVolume-slider">
+                                <div class="slider">
+                                    <div class="slider-progress">
+                                        <button class="slider-button" aria-label="Controlar el progreso de la producción"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                </div>
+
+            </footer>
+
+        </div>
+
+    </div>
+
+        
+   
+</body>
+</html>
