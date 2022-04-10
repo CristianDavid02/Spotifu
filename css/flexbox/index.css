@@ -1,0 +1,49 @@
+@import './display-flex.css';
+@import './flex-order.css';
+@import './flex-direction.css';
+@import './flex-wrap.css';
+@import './flex.css';
+@import './justify-content.css';
+@import './align-items.css';
+
+
+
+
+:root{
+    --body-background:#04001e;
+    --text-color:#DFFBFF;
+    --primary-color:#DB086F;
+}
+
+
+
+body{
+    background: var(--body-background);
+    color: var(--text-color);
+    font-family: system-ui;
+}
+
+
+
+a{
+    color: var(--text-color);
+}
+
+
+.wrapper{
+    max-inline-size: 64rem;
+    margin: auto;
+    
+}
+
+
+
+.box{
+    border: 5px dashed var(--primary-color);
+    padding: 1rem;
+    counter-increment: flex-items;
+}
+
+.box::after{
+    content: counter(flex-items);
+}

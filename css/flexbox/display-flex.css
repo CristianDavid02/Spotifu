@@ -1,0 +1,9 @@
+.displayFlex{
+    border: 2px solid blue;
+    display: flex;
+}
+
+
+.displayFlex .box + .box{
+    margin-inline-start: 1rem;
+}
